@@ -1,0 +1,7 @@
+---
+app_dir: /var/www/drupal/web
+servername: devops.gobear.dev
+
+drupal_mysql_user: drupal
+drupal_mysql_password: drupal
+drupal_mysql_dbname: drupal
