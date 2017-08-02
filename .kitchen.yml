@@ -1,0 +1,35 @@
+---
+driver:
+    name: vagrant
+    provider: virtualbox
+    box: ubuntu/xenial64
+
+provisioner:
+  name: ansible_playbook
+  hosts: all
+  roles_path: roles
+  require_ansible_repo: true
+  require_ansible_omnibus: false
+  require_ruby_for_busser: false
+  require_chef_for_busser: true
+  ansible_verbose: true
+  ansible_verbosity: 1
+  ansible_sudo: true
+
+verifier:
+  name: inspec
+
+platforms:
+  - name: ubuntu
+    driver_plugin: vagrant
+    driver_config:
+      network:
+      - ['forwarded_port', {guest: 80, host: 80}]
+      - [ 'private_network', { ip: '10.10.10.20' } ]
+
+suites:
+ - name: default
+   driver:
+     vm_hostname: devops.gobear.dev
+   provisioner:
+    playbook: bootstrap.yaml
