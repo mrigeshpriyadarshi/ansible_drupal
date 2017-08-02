@@ -1,0 +1,16 @@
+---
+
+- name: GoBear Environment
+  hosts: all
+  connection: local
+  gather_facts: yes
+  remote_user: vagrant
+  sudo: yes
+  vars_files:
+    - "group_vars/common.yaml"
+
+  roles:
+    - webserver
+    - db
+    - drupal
+    
