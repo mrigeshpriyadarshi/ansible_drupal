@@ -1,6 +1,6 @@
 # ansible_drupal
 
-This application is an attempt to create opencms on Vagrant Box with three tiered architecture. The automation is enabled through Vagrant starting from box creation to application deployment by Ansible. 
+This application is an attempt to create Drupal App on Vagrant Box with three tiered architecture. The automation is enabled through Vagrant starting from box creation to application deployment by Ansible. 
 
 Setup [Drupal](https://www.drupal.org/)  on your Vagrant Box with Ansible, you can install it from your laptop by making itself a Workstation
 
