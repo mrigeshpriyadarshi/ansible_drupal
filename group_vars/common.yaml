@@ -1,5 +1,6 @@
 ---
-app_dir: /var/www/drupal/web
+app_dir_base: /var/www/drupal
+app_dir: "{{ app_dir_base }}/web"
 servername: devops.gobear.dev
 
 drupal_mysql_user: drupal

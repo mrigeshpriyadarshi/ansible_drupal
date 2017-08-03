@@ -5,7 +5,7 @@ drupal_deploy: false
 drupal_deploy_repo: ""
 drupal_deploy_version: master
 drupal_deploy_update: true
-drupal_deploy_dir: "/var/www/drupal"
+drupal_deploy_dir: "{{ app_dir_base }}"
 drupal_deploy_accept_hostkey: no
 
 # Set this to 'true' and 'drupal_build_composer*' to 'false' if you would like
@@ -30,7 +30,7 @@ drupal_composer_project_package: "drupal-composer/drupal-project:8.x-dev"
 drupal_composer_project_options: "--prefer-dist --stability dev --no-interaction"
 
 # Required Drupal settings.
-drupal_core_path: "{{ drupal_deploy_dir }}/web"
+drupal_core_path: "{{ app_dir }}"
 drupal_core_owner: "{{ ansible_ssh_user | default(ansible_env.SUDO_USER, true) | default(ansible_env.USER, true) | default(ansible_user_id) }}"
 drupal_db_user: "{{drupal_mysql_user}}"
 drupal_db_password: "{{drupal_mysql_password}}"
