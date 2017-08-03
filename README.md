@@ -35,7 +35,7 @@ here](https://www.virtualbox.org/manual/ch01.html#intro-installing)).
 
 Clone the ansible_drupal repo, and start up Ansible:
 
-```bash
+```
 
 git clone https://github.com/mrigeshpriyadarshi/ansible_drupal.git
 cd ansible_drupal
@@ -73,12 +73,12 @@ drupal_mysql_dbname: drupal
 
 Then, execute following commands for vagrant to create the instance
 
-```bash
+```
 vagrant up
 
 or 
 
-Kitchen converge
+kitchen converge
 
 ```
 
