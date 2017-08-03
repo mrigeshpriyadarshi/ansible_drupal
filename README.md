@@ -36,10 +36,8 @@ here](https://www.virtualbox.org/manual/ch01.html#intro-installing)).
 Clone the ansible_drupal repo, and start up Ansible:
 
 ```
-
 git clone https://github.com/mrigeshpriyadarshi/ansible_drupal.git
 cd ansible_drupal
-
 ```
 
 We have divided the whole implentation in four roles:-
@@ -68,7 +66,6 @@ servername: devops.gobear.dev
 drupal_mysql_user: drupal
 drupal_mysql_password: drupal
 drupal_mysql_dbname: drupal
-
 ```
 
 Then, execute following commands for vagrant to create the instance
@@ -79,7 +76,6 @@ vagrant up
 or 
 
 kitchen converge
-
 ```
 
 This command will download a vagrant box, create a virtual machine, and start ansible-playbook to provision the Drupal with version 8.3.5.
@@ -113,7 +109,6 @@ vagrant destroy
 or
 
 kitchen destroy
-
 ```
 
 
