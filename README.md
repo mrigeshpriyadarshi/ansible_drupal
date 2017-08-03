@@ -23,12 +23,12 @@ here](https://www.virtualbox.org/manual/ch01.html#intro-installing)).
 
 * Install [Test kitchen](http://kitchen.ci)
 
-* Install certain kitchen plugins
-	gem install kitchen-vagrant
-	gem install kitchen-ansible
+* Install certain *kitchen plugins*
+	* gem install kitchen-vagrant
+	* gem install kitchen-ansible
 
-* Install vagrant plugins
-	vagrant plugin install vagrant-hostsupdater
+* Install *Vagrant plugins*
+	* vagrant plugin install vagrant-hostsupdater
 
 
 ## Simple installation
